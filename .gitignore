@@ -1,0 +1,60 @@
+# Ignore everything in the inputs and outputs folders
+inputs/*
+outputs/*
+
+# Allow the folders themselves to exist (but not their contents)
+!inputs/
+!outputs/
+
+# Ignore specific file types in the inputs and outputs folders
+inputs/**/*.csv
+inputs/**/*.fasta
+inputs/**/*.fa
+inputs/**/*.fastq
+inputs/**/*.tsv
+inputs/**/*.png
+inputs/**/*.jpg
+inputs/**/*.jpeg
+inputs/**/*.gif
+inputs/**/*.bmp
+inputs/**/*.svg
+inputs/**/*.pdf
+inputs/**/*.txt
+
+outputs/**/*.csv
+outputs/**/*.fasta
+outputs/**/*.fa
+outputs/**/*.fastq
+outputs/**/*.tsv
+outputs/**/*.png
+outputs/**/*.jpg
+outputs/**/*.jpeg
+outputs/**/*.gif
+outputs/**/*.bmp
+outputs/**/*.svg
+outputs/**/*.pdf
+outputs/**/*.txt
+
+# Python cache and log files
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Virtual environments
+.venv/
+env/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore model weights
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.onnx
